@@ -1,0 +1,16 @@
+.menu-button{
+    padding: 2px 12px;
+    color: white;
+    background: transparent;
+    border: .5px solid white;
+    border-radius: 15px;
+    font-size: 14px;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+}
+
+.menu-button span{
+    position: relative;
+    top: -7px;
+}
