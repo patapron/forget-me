@@ -4,12 +4,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { MatTooltipModule, MatListModule, MatIconModule, MatToolbarModule, MatButtonModule } from '@angular/material';
-
+import { MatTooltipModule, MatListModule, MatIconModule, MatToolbarModule, MatButtonModule, MatAutocompleteModule, MatInputModule, MatSelectModule } from '@angular/material';
+import { HomeComponent } from './components/home/home.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -22,8 +25,14 @@ import { MatTooltipModule, MatListModule, MatIconModule, MatToolbarModule, MatBu
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
+    MatAutocompleteModule,
+    MatInputModule,
+    MatSelectModule,
     // Http dependecy
-    HttpClientModule 
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
